@@ -17,17 +17,17 @@
 
 
     <title>PUPU&amp;ZITUAN</title>
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/favicon.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.2.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
@@ -43,7 +43,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">PUPU&amp;ZITUAN</span>
                 </a>
@@ -142,7 +142,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">PUPU&amp;ZITUAN</div>
         <div class="logo-desc">
@@ -389,14 +389,14 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/medias/banner/" + new Date().getDay() + '.jpg';
+    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 
 
 
             <div class="cover-btns">
-                <a href="#articles" class="waves-effect waves-light btn">
+                <a href="#indexCard" class="waves-effect waves-light btn">
                     <i class="fa fa-angle-double-down"></i>开始阅读
                 </a>
 
@@ -519,7 +519,7 @@
                         <div class="dream">
     
     <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;我的梦想
+        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;梦想
     </div>
     
     <div class="row">
@@ -532,6 +532,42 @@
                     
 
                     
+
+                    
+                        <link rel="stylesheet" href="/libs/dplayer/DPlayer.min.css">
+<div class="video-player">
+    
+    <div class="title center-align">
+        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;在一起 去这里 去哪里
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="dplayer" class="dplayer-video"
+                    ></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/dplayer/DPlayer.min.js"></script>
+<script>
+    $(function () {
+        new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: 'false' === 'true',
+            theme: '#42b983',
+            loop: 'false' === 'true',
+            lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
+            preload: 'auto',
+            volume: Number('0.7'),
+            video: {
+                url: '/medias/%E4%BC%8A%E5%BE%A1%E4%B8%8E%E6%91%98%E5%B8%8C%E7%9A%84%E4%BA%8C%E4%BA%BA%E4%B8%96%E7%95%8C.mp4',
+                pic: '',
+                thumbnails: ''
+            }
+        });
+    });
+</script>
 
                     
 
@@ -561,7 +597,7 @@
                         <div class="card-image">
                             
                             
-                            <img src="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/medias/featureimages/0.jpg" class="responsive-img" alt="first">
+                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="first">
                             
                             <span class="card-title">first</span>
                         </div>
@@ -601,7 +637,7 @@
                         <div class="card-image">
                             
                             
-                            <img src="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                             
                             <span class="card-title">Hello World</span>
                         </div>
@@ -640,7 +676,7 @@
 
     <footer class="page-footer bg-color">
     
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/libs/aplayer/APlayer.min.css">
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
 <style>
     .aplayer .aplayer-lrc p {
         
@@ -690,14 +726,14 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/APlayer.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
     <div class="container row center-align" style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
-            <span id="year">2019</span>
+            <span id="year">2020</span>
             <a href="/about" target="_blank">Sherlockgry</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
@@ -774,10 +810,10 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/js/search.js"></script>
+<script src="/js/search.js"></script>
 <script type="text/javascript">
 $(function () {
-    searchFunc("https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/search.xml", 'searchInput', 'searchResult');
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
 });
 </script>
 
@@ -789,12 +825,12 @@ $(function () {
 </div>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/libs/materialize/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/libs/aos/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/js/matery.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
 
@@ -815,12 +851,10 @@ $(function () {
 </script>
 
     
-    <script src="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/libs/others/clicklove.js" async="async"></script>
+    <script src="/libs/others/clicklove.js" async="async"></script>
     
     
-    <script async src="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/libs/others/busuanzi.pure.mini.js"></script>
-    
-
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -832,19 +866,19 @@ $(function () {
     
 
     
-    <script src="https://cdn.jsdelivr.net/gh/Sherlockgry/Sherlockgry.github.io@master/libs/instantpage/instantpage.js" type="module"></script>
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
 </body>
 
 </html>
-#樱花特效
 <script type="text/javascript">
-    //只在桌面版网页启用特效
+    //只在桌面版网页启用特效 樱花特效
     var windowWidth = $(window).width();
     if (windowWidth > 768) {
         document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
     }
     </script>
-#点击特效
 <script src="/js/cursor.js"></script>
